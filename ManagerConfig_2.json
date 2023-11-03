@@ -179,9 +179,9 @@
 					},
 					{
 						"ControlType": 6,
-						"LabelControlName": "Item stack rate",
+						"LabelControlName": "1スタックの上限",
 						"GameParamName": "GMOverlapRatio",
-						"Tooltips": "Stack limit for each type of item.",
+						"Tooltips": "アイテムの1スタックの上限",
 						"Range": {
 							"DefaultValue": 1,
 							"MinValue": 1,
@@ -193,9 +193,9 @@
 					},
 					{
 						"ControlType": 5,
-						"LabelControlName": "Unlock all recipes and talents for new characters?",
+						"LabelControlName": "新キャラ作成時すべての技術と天賦を解放する？",
 						"GameParamName": "IsUnLockAllTalentAndRecipe",
-						"Tooltips": "When enabled, all recipes and talents will be unlocked and available to new characters.",
+						"Tooltips": "チェック入れた場合、新キャラ作成時すべての技術と天賦を解放する",
 						"Range": {
 							"DefaultValue": false
 						},
@@ -205,9 +205,9 @@
 					},
 					{
 						"ControlType": 6,
-						"LabelControlName": "Starting inventory size",
+						"LabelControlName": "インベントリの初期サイズ",
 						"GameParamName": "GMBagInitGirdNum",
-						"Tooltips": "How many inventory slots a new character gets by default.",
+						"Tooltips": "新キャラのインベントリの初期スロット数",
 						"Range": {
 							"DefaultValue": 40,
 							"MinValue": 1,
@@ -232,9 +232,9 @@
 					{
 						"ControlTypeName": "",
 						"ControlType": 8,
-						"LabelControlName": "Items on respawn",
+						"LabelControlName": "復活時の獲得アイテム",
 						"GameParamName": "CharacterInitItem",
-						"Tooltips": "Which items a character gets on respawn. (Format: Item ID, Quality, Amount.) Use semicolons for each item.",
+						"Tooltips": "プレイヤー復活時貰えるアイテム (形式: Item ID, Quality, Amount.) ※「;」を使って各アイテムを分けてください",
 						"Range": {
 							"DefaultValue": ""
 						},
@@ -243,9 +243,9 @@
 					},
 					{
 						"ControlType": 2,
-						"LabelControlName": "Drop items on death?",
+						"LabelControlName": "死亡時アイテムドロップしますか？",
 						"GameParamName": "GMDeathDropMode",
-						"Tooltips": "0 = No drops, 1 = Drop all, 2 = Drop inventory (does not include equipped or hotkey items)）",
+						"Tooltips": "0 = しない, 1 = すべてドロップします, 2 = インベントリだけドロップします (装備とショートカットはドロップしない)",
 						"Range": {
 							"DefaultValue": "1",
 							"ArrayValue": [{
@@ -268,9 +268,9 @@
 					{
 						"ControlTypeName": "",
 						"ControlType": 6,
-						"LabelControlName": "Dropped items despawn after death",
+						"LabelControlName": "死亡ドロップの持続時間",
 						"GameParamName": "GMDeathInventoryLifeSpan",
-						"Tooltips": "Items dropped on death will disappear after this amount of time (in seconds)",
+						"Tooltips": "死亡からドロップ品消滅までの時間 (秒)",
 						"Range": {
 							"DefaultValue": 1800,
 							"MinValue": 0,
@@ -282,9 +282,9 @@
 					},
 					{
 						"ControlType": 2,
-						"LabelControlName": "Corpse loot permission",
+						"LabelControlName": "死体を漁る許可",
 						"GameParamName": "CorpsePickAuthority",
-						"Tooltips": "Set which players can loot a corpse. 0 = self only; 1 = squadmates; 2 = everyone",
+						"Tooltips": "死体を漁れるプレイヤーを設定する (0 = 自分だけ; 1 = チームメンバー; 2 = 誰でも)",
 						"Range": {
 							"DefaultValue": "2",
 							"ArrayValue": [{
@@ -306,9 +306,9 @@
 					},
 					{
 						"ControlType": 5,
-						"LabelControlName": "Creatures/Constructs drop items on death?",
+						"LabelControlName": "NPC/建造物は死亡ドロップしますか？",
 						"GameParamName": "GMCanDropItem",
-						"Tooltips": "When enabled, creatures and Constructs will drop items when killed/destroyed.",
+						"Tooltips": "チェック入れた場合、NPCと建造物が死亡/破壊された時ドロップします",
 						"Range": {
 							"DefaultValue": true
 						},
@@ -318,9 +318,9 @@
 					},
 					{
 						"ControlType": 5,
-						"LabelControlName": "Allow item discard?",
+						"LabelControlName": "アイテム破棄できるか？",
 						"GameParamName": "GMCanDiscardItem",
-						"Tooltips": "Set whether players can discard items.",
+						"Tooltips": "プレイヤーがアイテムを破棄できるかを設定する",
 						"Range": {
 							"DefaultValue": true
 						},
@@ -331,9 +331,9 @@
 					},
 					{
 						"ControlType": 6,
-						"LabelControlName": "Discarded items despawn",
+						"LabelControlName": "破棄したアイテムの持続時間",
 						"GameParamName": "GMDiscardBoxLifeSpan",
-						"Tooltips": "Items discarded will disappear after this amount of time (in seconds)",
+						"Tooltips": "アイテム破棄後から消滅までの時間 (秒)",
 						"Range": {
 							"DefaultValue": 300,
 							"MinValue": 0,
@@ -345,9 +345,9 @@
 					},
 					{
 						"ControlType": 6,
-						"LabelControlName": "Initial respawn cooldown",
+						"LabelControlName": "初期復活時間",
 						"GameParamName": "GMRebirthBaseCD",
-						"Tooltips": "Basic revival cooldown duration (in seconds)",
+						"Tooltips": "基本の復活時間 (秒)",
 						"Range": {
 							"DefaultValue": 10,
 							"MinValue": 0,
@@ -359,9 +359,9 @@
 					},
 					{
 						"ControlType": 6,
-						"LabelControlName": "Respawn cooldown penalty",
+						"LabelControlName": "復活時間のペナルティ",
 						"GameParamName": "GMRebirthExtraCD",
-						"Tooltips": "Amount by which revival cooldown increases after multiple deaths (in seconds)",
+						"Tooltips": "連続の死亡ごとに増える復活時間 (秒)",
 						"Range": {
 							"DefaultValue": 1,
 							"MinValue": 0,
@@ -373,9 +373,9 @@
 					},
 					{
 						"ControlType": 6,
-						"LabelControlName": "Death penalty times",
+						"LabelControlName": "復活ペナルティの回数上限",
 						"GameParamName": "GMPenaltiesMaxNum",
-						"Tooltips": "Death stack limit",
+						"Tooltips": "復活ペナルティの回数上限",
 						"Range": {
 							"DefaultValue": 5,
 							"MinValue": 0,
@@ -387,9 +387,9 @@
 					},
 					{
 						"ControlType": 6,
-						"LabelControlName": "Death penalty respawn time",
+						"LabelControlName": "復活ペナルティのリセット時間",
 						"GameParamName": "GMPenaltiesCD",
-						"Tooltips": "Time after which stacked revival cooldowns are reset (in seconds)",
+						"Tooltips": "復活からペナルティをリセットするまでの時間 (秒)",
 						"Range": {
 							"DefaultValue": 600,
 							"MinValue": 0,
@@ -427,9 +427,9 @@
 					},
 					{
 						"ControlType": 5,
-						"LabelControlName": "Show all Spacetime Beacons",
+						"LabelControlName": "すべての時空ビーコンを表示する",
 						"GameParamName": "OpenAllHouseFlag",
-						"Tooltips": "Displays the location of other players' Beacons on the map.",
+						"Tooltips": "他プレイヤーの時空ビーコンの位置をマップに表示する",
 						"Range": {
 							"DefaultValue": false
 						},
@@ -439,9 +439,9 @@
 					},
 				    {
 						"ControlType": 5,
-						"LabelControlName": "Allow chat (incl. voice)?",
+						"LabelControlName": "チャットの許可 (ボイスも含む)",
 						"GameParamName": "IsCanChat",
-						"Tooltips": "When disabled, prevents players from sending chat messages in-game.",
+						"Tooltips": "無効の場合、プレイヤーがゲーム内チャットできなくなります",
 						"Range": {
 							"DefaultValue": true
 						},
@@ -451,9 +451,9 @@
 					},
 					{
 						"ControlType": 5,
-						"LabelControlName": "Toggles whether blood effects appear when damaged.",
+						"LabelControlName": "ダメージ受ける時出血エフェクトを表示するか",
 						"GameParamName": "IsShowBlood",
-						"Tooltips": "Toggles whether blood effects appear when damaged.",
+						"Tooltips": "ダメージ受ける時出血エフェクトを表示するか",
 						"Range": {
 							"DefaultValue": true
 						},
@@ -475,9 +475,9 @@
 					},
 					{
 						"ControlType": 5,
-						"LabelControlName": "Enable wounded state?",
+						"LabelControlName": "負傷状態ありますか？",
 						"GameParamName": "HealthDyingState",
-						"Tooltips": "Enables whether wounded state is triggered when HP falls to 0, or player immediately dies.",
+						"Tooltips": "プレイヤーのHPが0になる時負傷状態になるか？それともすぐ死亡するか？",
 						"Range": {
 							"DefaultValue": true
 						},
@@ -487,9 +487,9 @@
 					},
 					{
 						"ControlType": 5,
-						"LabelControlName": "Enable anticheat?",
+						"LabelControlName": "アンチチート機能をオンしますか？",
 						"GameParamName": "UseACE",
-						"Tooltips": "Toggles anticheat.",
+						"Tooltips": "アンチチート機能のオンオフ",
 						"Range": {
 							"DefaultValue": true
 						},
@@ -500,9 +500,9 @@
 					{
 						"ControlTypeName": "",
 						"ControlType": 8,
-						"LabelControlName": "Add admin account",
+						"LabelControlName": "管理者アカウントを追加",
 						"GameParamName": "ServerAdminAccounts",
-						"Tooltips": "Enter a 17-digit Steam ID. Use semicolons between each ID. GM level defaults to highest level (Lv. 25)",
+						"Tooltips": "17桁のSteam IDを入力してください。「;」を使ってIDを分けてください。管理者権限はデフォルトで最高になります(lv. 25)。",
 						"Range": {
 							"DefaultValue": ""
 						},
