@@ -80,7 +80,7 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "仲間へダメージ？",
+							"LabelControlName": "チームへダメージ？",
 							"GameParamName": "IsCanFriendDamage",
 							"Tooltips": "フレンドリーファイアはありかどうか",
 							"Range": {
@@ -531,7 +531,7 @@
 				},
 				{
 					"TabID": "3",
-					"TabName": "Survival",
+					"TabName": "サバイバル",
 					"ControlList": [
 						{
 							"ControlType": 7,
@@ -563,9 +563,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Friendly name display distance",
+							"LabelControlName": "チームの表示距離",
 							"GameParamName": "HeadNameDisplayDist_Team",
-							"Tooltips": "Max distance at which you can see a squadmate's name (in meters)",
+							"Tooltips": "チームの名前を確認できる最大距離（メートル）",
 							"Range": {
 								"DefaultValue": 200,
 								"MinValue": 0,
@@ -577,9 +577,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Non-friendly name display distance",
+							"LabelControlName": "非チームの表示距離",
 							"GameParamName": "HeadNameDisplayDist_Enemy",
-							"Tooltips": "Max distance at which you can see a non-squadmate's name (in meters)",
+							"Tooltips": "チームではないプレイヤーの名前を確認できる最大距離（メートル）",
 							"Range": {
 								"DefaultValue": 20,
 								"MinValue": 0,
@@ -591,9 +591,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Inventory item DUR death penalty",
+							"LabelControlName": "デスペナルティ(装備)",
 							"GameParamName": "PlayerDeathAvatarItemDurableRate",
-							"Tooltips": "On death, the Durability of equipped items will fall by max Durability times this amount (does not affect drops)",
+							"Tooltips": "死亡時、装備アイテムの耐久度が最大耐久度×設定した値だけ下がる（ドロップには影響しない）",
 							"Range": {
 								"DefaultValue": 0,
 								"MinValue": 0,
@@ -605,9 +605,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Hotbar item DUR death penalty",
+							"LabelControlName": "デスペナルティ(ショートカット)",
 							"GameParamName": "PlayerDeatShortcutItemDurableRate",
-							"Tooltips": "On death, the Durability of hotbar items will fall by max Durability times this amount (does not affect drops)",
+							"Tooltips": "死亡時、ショートカットに入っているアイテムの耐久度が最大耐久度×設定した値だけ下がる（ドロップには影響しない）",
 							"Range": {
 								"DefaultValue": 0,
 								"MinValue": 0,
@@ -619,9 +619,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Crafting/repair time rate",
+							"LabelControlName": "制作/修理時間倍率",
 							"GameParamName": "GMCraftTimeRate",
-							"Tooltips": "Multiplies item crafting/repair time.",
+							"Tooltips": "アイテムの製作/修理時間を倍増させる",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -633,9 +633,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "All XP rate",
+							"LabelControlName": "XP倍率",
 							"GameParamName": "PlayerAddExpRate",
-							"Tooltips": "Multiplies all XP earned.",
+							"Tooltips": "獲得できるXPの倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -647,9 +647,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Kill XP rate",
+							"LabelControlName": "キルXP倍率",
 							"GameParamName": "PlayerKillAddExpRate",
-							"Tooltips": "Multiplies XP earned from killing monsters",
+							"Tooltips": "モンスターを倒した際に獲得できるXPの倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -661,9 +661,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Collection XP rate",
+							"LabelControlName": "収集XP倍率",
 							"GameParamName": "PlayerFarmAddExpRate",
-							"Tooltips": "Multiplies XP earned from collecting resources",
+							"Tooltips": "資源を収集した際に獲得できるXPの倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -676,9 +676,9 @@
 						{
 							"ControlTypeName": "",
 							"ControlType": 7,
-							"LabelControlName": "Crafting XP rate",
+							"LabelControlName": "クラフトXP倍率",
 							"GameParamName": "PlayerCraftAddExpRate",
-							"Tooltips": "Multiplies XP earned from crafting items",
+							"Tooltips": "クラフトした際に獲得できるXPの倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -690,9 +690,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Speed rate",
+							"LabelControlName": "移動速度倍率",
 							"GameParamName": "MoveSpeedRate",
-							"Tooltips": "Multiplies movement speed",
+							"Tooltips": "移動速度倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -704,9 +704,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Jump height rate",
+							"LabelControlName": "ジャンプ倍率",
 							"GameParamName": "JumpRate",
-							"Tooltips": "Multiplies jump height",
+							"Tooltips": "ジャンプ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -718,9 +718,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Fall DMG boost",
+							"LabelControlName": "落下ダメージ倍率",
 							"GameParamName": "PlayerLandedDamageRate",
-							"Tooltips": "Multiplies damage taken from falls.",
+							"Tooltips": "落下ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -732,9 +732,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "HP rate",
+							"LabelControlName": "最大HP倍率",
 							"GameParamName": "PlayerMaxHealthRate",
-							"Tooltips": "Multiplies max HP.",
+							"Tooltips": "HP倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -746,9 +746,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "HP recovery rate",
+							"LabelControlName": "HP回復倍率",
 							"GameParamName": "HealthRecoverRate",
-							"Tooltips": "HP recovery will be multiplied by this value.",
+							"Tooltips": "HP回復倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -760,9 +760,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Stamina rate",
+							"LabelControlName": "最大スタミナ倍率",
 							"GameParamName": "PlayerMaxStaminaRate",
-							"Tooltips": "Multiplies max stamina.",
+							"Tooltips": "スタミナ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -774,9 +774,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Stamina recovery rate",
+							"LabelControlName": "スタミナ回復倍率",
 							"GameParamName": "StaminaRecoverRate",
-							"Tooltips": "Stamina recovery will be multiplied by this value.",
+							"Tooltips": "スタミナ回復倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -788,9 +788,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Stamina loss rate",
+							"LabelControlName": "スタミナ消費倍率",
 							"GameParamName": "PlayerStaminaCostRate",
-							"Tooltips": "Multiplies stamina consumption speed.",
+							"Tooltips": "スタミナ消費倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -802,9 +802,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Max fullness multiplier",
+							"LabelControlName": "最大満腹度倍率",
 							"GameParamName": "PlayerMaxHungerRate",
-							"Tooltips": "Max Fullness will be multiplied by this value.",
+							"Tooltips": "最大満腹度倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -816,9 +816,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Fullness loss rate",
+							"LabelControlName": "満腹度減少倍率",
 							"GameParamName": "GMHungerDecRatio",
-							"Tooltips": "Multiplies Fullness consumption speed.",
+							"Tooltips": "満腹度減少倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -830,9 +830,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Fullness from food rate",
+							"LabelControlName": "満腹度回復倍率",
 							"GameParamName": "GMBodyHungerAddRate",
-							"Tooltips": "Multiplies amount of Fullness recovered by eating.",
+							"Tooltips": "食事による満腹度回復倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -844,9 +844,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Max hydration multiplier",
+							"LabelControlName": "最大水分倍率",
 							"GameParamName": "MaxBodyWaterRate",
-							"Tooltips": "Max Hydration will be multiplied by this value.",
+							"Tooltips": "最大水分倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -858,7 +858,7 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Hydration loss rate",
+							"LabelControlName": "水分減少倍率",
 							"GameParamName": "GMWaterDecRatio",
 							"Tooltips": "Multiplies Hydration consumption speed.",
 							"Range": {
@@ -872,9 +872,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Hydration from water rate",
+							"LabelControlName": "水分回復倍率",
 							"GameParamName": "GMBodyWaterAddRate",
-							"Tooltips": "Multiplies amount of Hydration recovered by drinking.",
+							"Tooltips": "水分回復倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -886,9 +886,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Max O2 multiplier",
+							"LabelControlName": "最大酸素倍率",
 							"GameParamName": "MaxBreathRate",
-							"Tooltips": "Multiplies max Oxygen.",
+							"Tooltips": "最大酸素倍率.",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -900,9 +900,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Max Oxygen will be multiplied by this value.",
+							"LabelControlName": "酸素回復倍率",
 							"GameParamName": "BreathRecoverRate",
-							"Tooltips": "Max Oxygen will be multiplied by this value.",
+							"Tooltips": "酸素回復倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -914,9 +914,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "O2 loss speed",
+							"LabelControlName": "酸素消費倍率",
 							"GameParamName": "PlayerBreathCostRate",
-							"Tooltips": "Multiplies Oxygen consumption speed.",
+							"Tooltips": "酸素消費倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -928,9 +928,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Med recovery rate",
+							"LabelControlName": "アイテム回復倍率",
 							"GameParamName": "GMPlayerHealthRate",
-							"Tooltips": "Multiplies amount of HP recovered from meds.",
+							"Tooltips": "薬によるHP回復量の倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -942,9 +942,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Food and med duration rate",
+							"LabelControlName": "効果の持続時間倍率",
 							"GameParamName": "GMFoodDragDurationRate",
-							"Tooltips": "Multiplies the duration of effect of food and meds.",
+							"Tooltips": "薬や食事による効果の持続時間倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -958,7 +958,7 @@
 				},
 				{
 					"TabID": "4",
-					"TabName": "NPCs",
+					"TabName": "NPC",
 					"ControlList": [
 						{
 							"ControlType": 6,
