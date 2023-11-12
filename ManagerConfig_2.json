@@ -68,7 +68,7 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "自分へのダメージ",
+							"LabelControlName": "自分へダメージ？",
 							"GameParamName": "IsCanSelfDamage",
 							"Tooltips": "自分自身の攻撃を受けるかどうか",
 							"Range": {
@@ -80,7 +80,7 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "仲間へのダメージ",
+							"LabelControlName": "仲間へダメージ？",
 							"GameParamName": "IsCanFriendDamage",
 							"Tooltips": "フレンドリーファイアはありかどうか",
 							"Range": {
@@ -104,7 +104,7 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "P2Pモード",
+							"LabelControlName": "P2Pモード？",
 							"GameParamName": "UseSteamSocket",
 							"Tooltips": "固定IPやドメインを持っていない場合は有効にしてください",
 							"Range": {
@@ -119,7 +119,7 @@
 							"ControlType": 8,
 							"LabelControlName": "Game Port",
 							"GameParamName": "Port",
-							"Tooltips": "複数のサーバーをホストする場合、各サーバーのゲームポートは異なる必要があります。これは他のポートと同じ値にはできません。",
+							"Tooltips": "複数のサーバーをホストする場合、各サーバーのゲームポートは異なる必要があります\nこれは他のポートと同じ値にはできません",
 							"Range": {
 								"DefaultValue": "5001"
 							},
@@ -131,7 +131,7 @@
 							"ControlType": 8,
 							"LabelControlName": "Lobby Port",
 							"GameParamName": "BeaconPort",
-							"Tooltips": "複数のサーバーをホストする場合、各サーバーのロビーポートは異なる必要があります。これは他のポートと同じ値にはできません。",
+							"Tooltips": "複数のサーバーをホストする場合、各サーバーのロビーポートは異なる必要があります\nこれは他のポートと同じ値にはできません",
 							"Range": {
 								"DefaultValue": "5002"
 							},
@@ -143,7 +143,7 @@
 							"ControlType": 8,
 							"LabelControlName": "Close server listening port",
 							"GameParamName": "ShutDownServicePort",
-							"Tooltips": "複数のサーバーをホストする場合、各サーバーのクローズド・サーバー・リスニング・ポートは異なる必要があります。これは、他のポートと同じ値にはできません。",
+							"Tooltips": "複数のサーバーをホストする場合、各サーバーのクローズド・サーバー・リスニング・ポートは異なる必要があります\nこれは、他のポートと同じ値にはできません",
 							"Range": {
 								"DefaultValue": "5003"
 							},
@@ -155,7 +155,7 @@
 							"ControlType": 8,
 							"LabelControlName": "Steam Remote Port",
 							"GameParamName": "QueryPort",
-							"Tooltips": "範囲:27015-27050(専門家以外は注意して変更してください),複数のサーバーをホストする場合、各サーバーのスチームリモートポートは異なる必要があります。これは他のポートと同じ値にはできません。",
+							"Tooltips": "範囲:27015-27050(専門家以外は注意して変更してください)\n複数のサーバーをホストする場合、各サーバーのスチームリモートポートは異なる必要があります\nこれは他のポートと同じ値にはできません",
 							"Range": {
 								"DefaultValue": "27015"
 							},
@@ -170,9 +170,9 @@
 					"ControlList": [
 						{
 							"ControlType": 6,
-							"LabelControlName": "セーブの間隔[s]",
+							"LabelControlName": "セーブの間隔",
 							"GameParamName": "SaveWorldInterval",
-							"Tooltips": "何秒おきにデータを保存するか",
+							"Tooltips": "データの保存間隔(秒)",
 							"Range": {
 								"DefaultValue": 300,
 								"MinValue": 150,
@@ -184,9 +184,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Item stack rate",
+							"LabelControlName": "1スタック上限倍率",
 							"GameParamName": "GMOverlapRatio",
-							"Tooltips": "Stack limit for each type of item.",
+							"Tooltips": "アイテムの1スタックの上限倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -198,9 +198,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Unlock all recipes and talents for new characters?",
+							"LabelControlName": "全技術と天賦を解放？",
 							"GameParamName": "IsUnLockAllTalentAndRecipe",
-							"Tooltips": "When enabled, all recipes and talents will be unlocked and available to new characters.",
+							"Tooltips": "チェック入れた場合、新キャラ作成時すべての技術と天賦を解放する",
 							"Range": {
 								"DefaultValue": false
 							},
@@ -210,9 +210,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Starting inventory size",
+							"LabelControlName": "インベントリの初期サイズ",
 							"GameParamName": "GMBagInitGirdNum",
-							"Tooltips": "How many inventory slots a new character gets by default.",
+							"Tooltips": "新キャラのインベントリの初期スロット数",
 							"Range": {
 								"DefaultValue": 40,
 								"MinValue": 1,
@@ -224,9 +224,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Enable novice protection?",
+							"LabelControlName": "初心者保護?",
 							"GameParamName": "GreenHand",
-							"Tooltips": "When enabled, new characters will receive novice protection.",
+							"Tooltips": "有効にすると新キャラに初心者保護を適用します",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -237,9 +237,9 @@
 						{
 							"ControlTypeName": "",
 							"ControlType": 8,
-							"LabelControlName": "Items on respawn",
+							"LabelControlName": "復活時の獲得アイテム",
 							"GameParamName": "CharacterInitItem",
-							"Tooltips": "Which items a character gets on respawn. (Format: Item ID, Quality, Amount.) Use semicolons for each item.",
+							"Tooltips": "プレイヤー復活時貰えるアイテム (フォーマット: Item ID, Quality, Amount.) ※「;」を使って各アイテムを分けてください",
 							"Range": {
 								"DefaultValue": ""
 							},
@@ -248,9 +248,9 @@
 						},
 						{
 							"ControlType": 2,
-							"LabelControlName": "Drop items on death?",
+							"LabelControlName": "死亡時のドロップ設定",
 							"GameParamName": "GMDeathDropMode",
-							"Tooltips": "0 = No drops, 1 = Drop all, 2 = Drop inventory (does not include equipped or hotkey items)）",
+							"Tooltips": "0 = しない\n1 = すべてドロップ\n2 = インベントリだけドロップ(装備とショートカットはドロップしない)",
 							"Range": {
 								"DefaultValue": "1",
 								"ArrayValue": [
@@ -274,9 +274,9 @@
 						{
 							"ControlTypeName": "",
 							"ControlType": 6,
-							"LabelControlName": "Dropped items despawn after death",
+							"LabelControlName": "死亡ドロップの消失時間",
 							"GameParamName": "GMDeathInventoryLifeSpan",
-							"Tooltips": "Items dropped on death will disappear after this amount of time (in seconds)",
+							"Tooltips": "死亡からドロップ品消滅までの時間 (秒)",
 							"Range": {
 								"DefaultValue": 1800,
 								"MinValue": 0,
@@ -288,9 +288,9 @@
 						},
 						{
 							"ControlType": 2,
-							"LabelControlName": "Corpse loot permission",
+							"LabelControlName": "死体を漁る許可",
 							"GameParamName": "CorpsePickAuthority",
-							"Tooltips": "Set which players can loot a corpse. 0 = self only; 1 = squadmates; 2 = everyone",
+							"Tooltips": "死体を漁れるプレイヤーを設定する\n0 = 自分だけ; 1 = チームメンバー; 2 = 誰でも",
 							"Range": {
 								"DefaultValue": "2",
 								"ArrayValue": [
@@ -313,9 +313,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Creatures/Constructs drop items on death?",
+							"LabelControlName": "NPC/建造物のドロップ？",
 							"GameParamName": "GMCanDropItem",
-							"Tooltips": "When enabled, creatures and Constructs will drop items when killed/destroyed.",
+							"Tooltips": "チェック入れた場合、NPCと建造物が死亡/破壊された時ドロップします",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -325,9 +325,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Allow item discard?",
+							"LabelControlName": "アイテムを捨てられる？",
 							"GameParamName": "GMCanDiscardItem",
-							"Tooltips": "Set whether players can discard items.",
+							"Tooltips": "プレイヤーがアイテムを破棄できるかを設定する",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -337,9 +337,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Discarded items despawn",
+							"LabelControlName": "アイテムの消失時間",
 							"GameParamName": "GMDiscardBoxLifeSpan",
-							"Tooltips": "Items discarded will disappear after this amount of time (in seconds)",
+							"Tooltips": "アイテム破棄後から消滅までの時間 (秒)",
 							"Range": {
 								"DefaultValue": 300,
 								"MinValue": 0,
@@ -351,9 +351,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Initial respawn cooldown",
+							"LabelControlName": "初期復活時間",
 							"GameParamName": "GMRebirthBaseCD",
-							"Tooltips": "Basic revival cooldown duration (in seconds)",
+							"Tooltips": "基本の復活時間 (秒)",
 							"Range": {
 								"DefaultValue": 10,
 								"MinValue": 0,
@@ -365,9 +365,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Respawn cooldown penalty",
+							"LabelControlName": "復活ペナルティ",
 							"GameParamName": "GMRebirthExtraCD",
-							"Tooltips": "Amount by which revival cooldown increases after multiple deaths (in seconds)",
+							"Tooltips": "連続死亡ごとに延長される復活時間 (秒)",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -379,9 +379,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Death penalty times",
+							"LabelControlName": "復活ペナルティ上限",
 							"GameParamName": "GMPenaltiesMaxNum",
-							"Tooltips": "Death stack limit",
+							"Tooltips": "復活ペナルティの回数上限",
 							"Range": {
 								"DefaultValue": 5,
 								"MinValue": 0,
@@ -393,9 +393,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Death penalty respawn time",
+							"LabelControlName": "復活ペナルティのリセット",
 							"GameParamName": "GMPenaltiesCD",
-							"Tooltips": "Time after which stacked revival cooldowns are reset (in seconds)",
+							"Tooltips": "復活からペナルティをリセットするまでの時間 (秒)",
 							"Range": {
 								"DefaultValue": 600,
 								"MinValue": 0,
@@ -407,9 +407,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Set Construct decay",
+							"LabelControlName": "建築物の風化？",
 							"GameParamName": "ConstructEnableRot",
-							"Tooltips": "When enabled, Constructs will decay.",
+							"Tooltips": "有効にすると建築物が風化します",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -419,9 +419,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Monster raid cooldown rate",
+							"LabelControlName": "補給の待ち時間倍率",
 							"GameParamName": "GMAttackCityCdRatio",
-							"Tooltips": "Multiplies the cooldown time between supply deliveries.",
+							"Tooltips": "補給までのクールダウン時間を倍増する",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -433,9 +433,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Show all Spacetime Beacons",
+							"LabelControlName": "他人のビーコンを表示？",
 							"GameParamName": "OpenAllHouseFlag",
-							"Tooltips": "Displays the location of other players' Beacons on the map.",
+							"Tooltips": "他プレイヤーの時空ビーコンの位置をマップに表示する",
 							"Range": {
 								"DefaultValue": false
 							},
@@ -445,9 +445,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Allow chat (incl. voice)?",
+							"LabelControlName": "チャット許可？(VC含む)",
 							"GameParamName": "IsCanChat",
-							"Tooltips": "When disabled, prevents players from sending chat messages in-game.",
+							"Tooltips": "無効の場合、プレイヤーがゲーム内チャットできなくなります",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -457,9 +457,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Toggles whether blood effects appear when damaged.",
+							"LabelControlName": "出血エフェクトを表示？",
 							"GameParamName": "IsShowBlood",
-							"Tooltips": "Toggles whether blood effects appear when damaged.",
+							"Tooltips": "ダメージ受ける時出血エフェクトを表示するか",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -469,9 +469,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Enable profanity?",
+							"LabelControlName": "過激な発言の許可？",
 							"GameParamName": "SensitiveWords",
-							"Tooltips": "When disable, profanity will be blocked.",
+							"Tooltips": "無効にすると過激な発言はブロックされます",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -481,9 +481,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Enable wounded state?",
+							"LabelControlName": "負傷状態を有効化？",
 							"GameParamName": "HealthDyingState",
-							"Tooltips": "Enables whether wounded state is triggered when HP falls to 0, or player immediately dies.",
+							"Tooltips": "プレイヤーのHPが0になった時、負傷状態になるか？それともすぐ死亡するか？",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -493,9 +493,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Enable anticheat?",
+							"LabelControlName": "アンチチート機能を利用？",
 							"GameParamName": "UseACE",
-							"Tooltips": "Toggles anticheat.",
+							"Tooltips": "アンチチート機能の有効化",
 							"Range": {
 								"DefaultValue": true
 							},
@@ -506,9 +506,9 @@
 						{
 							"ControlTypeName": "",
 							"ControlType": 8,
-							"LabelControlName": "Add admin account",
+							"LabelControlName": "管理者アカウントを追加",
 							"GameParamName": "ServerAdminAccounts",
-							"Tooltips": "Enter a 17-digit Steam ID. Use semicolons between each ID. GM level defaults to highest level (Lv. 25)",
+							"Tooltips": "17桁のSteam IDを入力してください\n「;」を使って複数の管理者を追加することができます\n管理者権限はデフォルトで最高になります(lv. 25)",
 							"Range": {
 								"DefaultValue": ""
 							},
@@ -517,9 +517,9 @@
 						},
 						{
 							"ControlType": 5,
-							"LabelControlName": "Label admin",
+							"LabelControlName": "管理者ラベルを表示？",
 							"GameParamName": "IsShowGmTitle",
-							"Tooltips": "Toggles special admin icon.",
+							"Tooltips": "特別な管理者アイコンを表示します",
 							"Range": {
 								"DefaultValue": false
 							},
