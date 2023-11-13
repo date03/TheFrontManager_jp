@@ -35,7 +35,7 @@
 							"ControlType": 6,
 							"LabelControlName": "最大同時接続人数",
 							"GameParamName": "QueueThreshold",
-							"Tooltips": "サーバーに同時にログインできるユーザー数",
+							"Tooltips": "サーバーに同時にログインできるプレイヤー数",
 							"Range": {
 								"DefaultValue": 40,
 								"MinValue": 1,
@@ -563,9 +563,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "チームの表示距離",
+							"LabelControlName": "チーム名の表示距離",
 							"GameParamName": "HeadNameDisplayDist_Team",
-							"Tooltips": "チームの名前を確認できる最大距離（メートル）",
+							"Tooltips": "チームに所属するプレイヤー名を確認できる最大距離（メートル）",
 							"Range": {
 								"DefaultValue": 200,
 								"MinValue": 0,
@@ -577,7 +577,7 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "非チームの表示距離",
+							"LabelControlName": "非チーム名の表示距離",
 							"GameParamName": "HeadNameDisplayDist_Enemy",
 							"Tooltips": "チームではないプレイヤーの名前を確認できる最大距離（メートル）",
 							"Range": {
@@ -962,9 +962,9 @@
 					"ControlList": [
 						{
 							"ControlType": 6,
-							"LabelControlName": "All monster respawn time rate",
+							"LabelControlName": "リスポーン時間倍率",
 							"GameParamName": "NpcRespawnRatio",
-							"Tooltips": "Multiplies time before dead wild NPCs can respawn.",
+							"Tooltips": "死亡したNPCがリスポーンするまでの時間に倍率をかける",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -976,9 +976,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Monster NPC corpse despawn time",
+							"LabelControlName": "倒した動物の消滅時間",
 							"GameParamName": "AnimalBodyStayTime",
-							"Tooltips": "Animal NPC corpses will disappear after this amount of time (in seconds)",
+							"Tooltips": "動物のNPCの死体は、この時間（秒）が経過すると消滅します",
 							"Range": {
 								"DefaultValue": 300,
 								"MinValue": 10,
@@ -990,9 +990,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Human NPC corpse despawn time",
+							"LabelControlName": "倒した人間の消滅時間",
 							"GameParamName": "HumanBodyStayTime",
-							"Tooltips": "Human NPC corpses will disappear after this amount of time (in seconds)",
+							"Tooltips": "人間のNPCの死体は、この時間（秒）が経過すると消滅します",
 							"Range": {
 								"DefaultValue": 10,
 								"MinValue": 0,
@@ -1004,9 +1004,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Wild NPC corpse drop rate",
+							"LabelControlName": "野良NPCドロップ倍率",
 							"GameParamName": "GMNPCLootableItemRatio",
-							"Tooltips": "Multiplies the amount of items dropped by a wild NPC on death.",
+							"Tooltips": "野良のNPCを倒した時のドロップ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1018,9 +1018,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Wild NPC starting lv. rate",
+							"LabelControlName": "野良NPCレベル倍率",
 							"GameParamName": "NpcSpawnLevelRatio",
-							"Tooltips": "Multiplies the level of wild NPCs, making them more powerful.",
+							"Tooltips": "野良のNPCのレベル倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -1032,9 +1032,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Wild NPC DMG rate",
+							"LabelControlName": "野良NPCダメージ倍率",
 							"GameParamName": "WildNPCDamageRate",
-							"Tooltips": "Multiplies the damage dealt by wild NPCs.",
+							"Tooltips": "野良のNPCのダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1046,9 +1046,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Wild NPC HP rate",
+							"LabelControlName": "野良NPC体力倍率",
 							"GameParamName": "WildNPCHealthRate",
-							"Tooltips": "Multiplies the HP of wild NPCs.",
+							"Tooltips": "野良のNPCの体力倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0.1,
@@ -1060,9 +1060,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Wild NPC speed rate",
+							"LabelControlName": "野良NPCスピード倍率",
 							"GameParamName": "WildNPCSpeedRate",
-							"Tooltips": "Multiplies the movement speed of wild NPCs.",
+							"Tooltips": "野良のNPCのスピード倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0.1,
@@ -1074,9 +1074,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Raid NPC lv. rate",
+							"LabelControlName": "レイドNPCレベル倍率",
 							"GameParamName": "CityNPCLevelRate",
-							"Tooltips": "Multiplies the level of raid NPCs, making them more powerful.",
+							"Tooltips": "ビーコンによる補給実施時のNPCレベル倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -1088,9 +1088,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Raid NPC DMG rate",
+							"LabelControlName": "レイドNPCダメージ倍率",
 							"GameParamName": "CityNPCDamageRate",
-							"Tooltips": "Multiplies the damage dealt by raid NPCs.",
+							"Tooltips": "ビーコンによる補給実施時のNPCダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1102,9 +1102,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Raid NPC HP rate",
+							"LabelControlName": "レイドNPC体力倍率",
 							"GameParamName": "CityNPCHealthRate",
-							"Tooltips": "Multiplies the HP of raid NPCs.",
+							"Tooltips": "ビーコンによる補給実施時のNPC体力倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0.1,
@@ -1116,9 +1116,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Raid NPC speed multiplier",
+							"LabelControlName": "レイドNPCスピード倍率",
 							"GameParamName": "CityNPCSpeedRate",
-							"Tooltips": "Multiplies the movement speed of raid NPCs.",
+							"Tooltips": "ビーコンによる補給実施時のNPCスピード倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0.1,
@@ -1130,9 +1130,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Raid NPC amt rate",
+							"LabelControlName": "レイドNPC数倍率",
 							"GameParamName": "CityNPCNumRate",
-							"Tooltips": "Multiplies the total amount of raid NPCs summoned each round.",
+							"Tooltips": "ビーコンによる補給実施時のNPC出現数の倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0.1,
@@ -1144,9 +1144,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "NPC name display distance",
+							"LabelControlName": "NPC名の表示距離",
 							"GameParamName": "NpcDisplayDistance",
-							"Tooltips": "Max distance at which you can see an NPC's name (in meters)",
+							"Tooltips": "NPCの名前が見える最大距離（メートル）",
 							"Range": {
 								"DefaultValue": 50,
 								"MinValue": 0,
@@ -1158,9 +1158,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Collectible resource spawn rate",
+							"LabelControlName": "補給報酬倍率",
 							"GameParamName": "GMInventoryGainRate",
-							"Tooltips": "Multiplies the amount of resources received upon collection.",
+							"Tooltips": "補給報酬倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1172,9 +1172,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Raid corpse drop rate",
+							"LabelControlName": "レイドNPCドロップ倍率",
 							"GameParamName": "GMCityATKNPCLootItemRatio",
-							"Tooltips": "Multiplies the amount of items dropped by a raid NPC on death.",
+							"Tooltips": "レイドNPCドロップ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1188,13 +1188,13 @@
 				},
 				{
 					"TabID": "5",
-					"TabName": "Construct DEF",
+					"TabName": "建築",
 					"ControlList": [
 						{
 							"ControlType": 6,
-							"LabelControlName": "Player Beacon limit",
+							"LabelControlName": "ビーコン最大数",
 							"GameParamName": "GMMaxHouseFlagNumber",
-							"Tooltips": "Max number of Beacons each player can build.",
+							"Tooltips": "ビーコン最大数",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -1206,9 +1206,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Player work Construct limit",
+							"LabelControlName": "作業台設置上限倍率",
 							"GameParamName": "GMSetGJConstructMaxNumRatio",
-							"Tooltips": "Max number of work-type Constructs each player can build will be multiplied by this value.",
+							"Tooltips": "作業台設置上限倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -1220,9 +1220,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Beacon trap limit",
+							"LabelControlName": "トラップ設置上限",
 							"GameParamName": "GMHFTrapMaxNum",
-							"Tooltips": "Max number of traps that can be within Beacon coverage.",
+							"Tooltips": "ビーコン内に置けるトラップ設置上限\n0で無制限",
 							"Range": {
 								"DefaultValue": 0,
 								"MinValue": 0,
@@ -1234,9 +1234,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Beacon turret limit",
+							"LabelControlName": "タレット設置上限",
 							"GameParamName": "GMHFTurretMaxNum",
-							"Tooltips": "Max number of turrets that can be within Beacon coverage.",
+							"Tooltips": "ビーコン内に置けるタレット設置上限\n0で無制限",
 							"Range": {
 								"DefaultValue": 0,
 								"MinValue": 0,
@@ -1248,9 +1248,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Non-trap Construct DMG RES rate",
+							"LabelControlName": "非トラップの被ダメージ倍率",
 							"GameParamName": "GMConstructDefenseRatio",
-							"Tooltips": "Damage taken is multiplied by this value.",
+							"Tooltips": "非トラップの被ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1262,9 +1262,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Trap DMG RES rate",
+							"LabelControlName": "トラップの被ダメージ倍率",
 							"GameParamName": "GMTrapDefenseRatio",
-							"Tooltips": "Damage taken is multiplied by this value.",
+							"Tooltips": "トラップの被ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1276,9 +1276,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Turret DMG RES rate",
+							"LabelControlName": "タレットの被ダメージ倍率",
 							"GameParamName": "GMTurretDefenseRatio",
-							"Tooltips": "Damage taken is multiplied by this value.",
+							"Tooltips": "タレットの被ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1290,9 +1290,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Trap DMG rate",
+							"LabelControlName": "トラップダメージ倍率",
 							"GameParamName": "GMTrapDamageRatio",
-							"Tooltips": "Multiplies damage dealt by traps.",
+							"Tooltips": "トラップダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1304,9 +1304,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Turret DMG rate",
+							"LabelControlName": "タレットダメージ倍率",
 							"GameParamName": "GMTurretDamageRatio",
-							"Tooltips": "Multiplies damage dealt by turrets.",
+							"Tooltips": "タレットダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1318,9 +1318,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Construct DUR rate",
+							"LabelControlName": "建築耐久値倍率",
 							"GameParamName": "GMConstructMaxHealthRatio",
-							"Tooltips": "Multiplies the max Durability of Constructs.",
+							"Tooltips": "建築耐久値倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0.1,
@@ -1332,9 +1332,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Construct DUR recovery rate",
+							"LabelControlName": "建築耐久値回復倍率",
 							"GameParamName": "GMConstructReturnHPRatio",
-							"Tooltips": "Multiplies the Durability recovery speed of placed Constructs.",
+							"Tooltips": "建築耐久値回復倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1346,9 +1346,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Spacetime Beacon auto-repair rate",
+							"LabelControlName": "自動修理速度倍率",
 							"GameParamName": "GMHouseFlagRepairHealthRatio",
-							"Tooltips": "Multiplies the Durability recovery speed of Constructs within auto-repair range of a Beacon.",
+							"Tooltips": "ビーコンの自動修復範囲内にいる建築の耐久力回復速度に倍率がかかる",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1360,9 +1360,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Oil Well work production rate",
+							"LabelControlName": "油井生産倍率",
 							"GameParamName": "GMTTC_Oil_Rate",
-							"Tooltips": "Multiplies resources collected from Oil Wells.",
+							"Tooltips": "油井生産倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1374,9 +1374,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Dew Collector work production rate",
+							"LabelControlName": "収露器生産倍率",
 							"GameParamName": "GMWaterCollecter_Rate",
-							"Tooltips": "Multiplies resources collected from Dew Collectors.",
+							"Tooltips": "収露器生産倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1388,9 +1388,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Mine work production rate",
+							"LabelControlName": "鉱坑生産倍率",
 							"GameParamName": "GMTTC_Ore_Rate",
-							"Tooltips": "Multiplies resources collected from Mines.",
+							"Tooltips": "鉱坑生産倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1402,9 +1402,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Fish Basket work production rate",
+							"LabelControlName": "魚罠生産倍率",
 							"GameParamName": "GMTTC_Fish_Rate",
-							"Tooltips": "Multiplies resources collected from Fish Baskets.",
+							"Tooltips": "魚を獲得できる罠の生産倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1416,9 +1416,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Beacon player gun DMG RES rate",
+							"LabelControlName": "ビーコンへの銃ダメージ倍率",
 							"GameParamName": "CHFDamagedByPlayer",
-							"Tooltips": "Damage that beacons take from player firearms is multiplied by this value.",
+							"Tooltips": "ビーコンへの銃ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1430,9 +1430,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Beacon player vehicle DMG RES rate",
+							"LabelControlName": "ビーコンへの車両ダメージ倍率",
 							"GameParamName": "CHFDamagedByVehicle",
-							"Tooltips": "Damage that beacons take from player vehicles is multiplied by this value.",
+							"Tooltips": "ビーコンへの車両ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1444,9 +1444,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Beacon NPC DMG RES rate",
+							"LabelControlName": "ビーコンへのNPCダメージ倍率",
 							"GameParamName": "CHFDamagedByNpc",
-							"Tooltips": "Damage that beacons take from NPC attacks is multiplied by this value.",
+							"Tooltips": "ビーコンへのNPCダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1458,9 +1458,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Beacon daily non-protection duration",
+							"LabelControlName": "PvP保護解除時間",
 							"GameParamName": "GMHouseFlagExcitantTime",
-							"Tooltips": "Sets the amount of time that beacons can be attacked. The starting time of this period is set in-game.",
+							"Tooltips": "PvP保護が外れる時間\n何時から何時までかはプレイヤーが設定\n24に設定するとPvP保護が常時無効になる",
 							"Range": {
 								"DefaultValue": 3,
 								"MinValue": 0,
@@ -1474,7 +1474,7 @@
 				},
 				{
 					"TabID": "6",
-					"TabName": "Resources",
+					"TabName": "資源",
 					"ControlList": [
 						{
 							"ControlType": 6,
