@@ -535,9 +535,9 @@
 					"ControlList": [
 						{
 							"ControlType": 7,
-							"LabelControlName": "Heat RES Boost rate",
+							"LabelControlName": "暑さ耐性倍率",
 							"GameParamName": "PlayerHotDefAddRate",
-							"Tooltips": "Multiplies character Heat RES.",
+							"Tooltips": "暑さ耐性倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -549,9 +549,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Cold RES Boost rate",
+							"LabelControlName": "寒さ耐性倍率",
 							"GameParamName": "PlayerIceDefAddRate",
-							"Tooltips": "Multiplies character Cold RES.",
+							"Tooltips": "寒さ耐性倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1478,9 +1478,9 @@
 					"ControlList": [
 						{
 							"ControlType": 6,
-							"LabelControlName": "Resource collection rate",
+							"LabelControlName": "資源収集倍率",
 							"GameParamName": "GMMaxRetrieveProductsRate",
-							"Tooltips": "Controls max gains from collection. This value must be bigger than other collection rates.",
+							"Tooltips": "資源収集倍率\nこの値は他の収集倍率より大きい必要があります",
 							"Range": {
 								"DefaultValue": -1,
 								"MinValue": -1,
@@ -1492,9 +1492,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Wood production rate",
+							"LabelControlName": "木材収集倍率",
 							"GameParamName": "GMTreeGainRate",
-							"Tooltips": "Multiplies amount of wood collected.",
+							"Tooltips": "木材収集倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1506,9 +1506,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Plant production rate",
+							"LabelControlName": "植物収集倍率",
 							"GameParamName": "GMBushGainRate",
-							"Tooltips": "Multiplies amount of plants collected.",
+							"Tooltips": "植物収集倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1520,9 +1520,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Ore production rate",
+							"LabelControlName": "鉱石収集倍率",
 							"GameParamName": "GMOreGainRate",
-							"Tooltips": "Multiplies amount of ore collected.",
+							"Tooltips": "鉱石収集倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1534,9 +1534,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Crop production rate",
+							"LabelControlName": "作物収集倍率",
 							"GameParamName": "GMCropVegetableReapRatio",
-							"Tooltips": "Multiplies amount of crops collected.",
+							"Tooltips": "作物収集倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1548,9 +1548,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Animal production rate",
+							"LabelControlName": "動物収集倍率",
 							"GameParamName": "GMFleshGainRate",
-							"Tooltips": "Multiplies amount of items collected from corpses.",
+							"Tooltips": "動物収集倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 1,
@@ -1562,9 +1562,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Crop growth speed",
+							"LabelControlName": "作物成長速度倍率",
 							"GameParamName": "GMCropVegetableGrowRatio",
-							"Tooltips": "Multiplies growth speed of planted crops.",
+							"Tooltips": "作物成長速度倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1578,13 +1578,13 @@
 				},
 				{
 					"TabID": "7",
-					"TabName": "Combat",
+					"TabName": "戦闘",
 					"ControlList": [
 						{
 							"ControlType": 7,
-							"LabelControlName": "Melee DMG vs. NPC rate",
+							"LabelControlName": "近接対NPCダメージ倍率",
 							"GameParamName": "GMMeleeNpcDamageRatio",
-							"Tooltips": "Multiplies melee weapon damage that characters deal to NPCs.",
+							"Tooltips": "近接対NPCダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1596,9 +1596,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Ranged DMG vs. NPC rate",
+							"LabelControlName": "射撃対NPCダメージ倍率",
 							"GameParamName": "GMRangedNpcDamageRatio",
-							"Tooltips": "Multiplies ranged weapon damage that characters deal to NPCs.",
+							"Tooltips": "射撃対NPCダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1610,9 +1610,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Melee PVP DMG rate",
+							"LabelControlName": "近接PVPダメージ倍率",
 							"GameParamName": "GMMeleePlayerDamageRatio",
-							"Tooltips": "Multiplies melee weapon damage that characters deal to players.",
+							"Tooltips": "近接PVPダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1624,9 +1624,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Ranged PVP DMG rate",
+							"LabelControlName": "射撃PVPダメージ倍率",
 							"GameParamName": "GMRangedPlayerDamageRatio",
-							"Tooltips": "Multiplies ranged weapon damage that characters deal to players.",
+							"Tooltips": "射撃PVPダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1638,9 +1638,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Melee DMG vs. Constructs rate",
+							"LabelControlName": "近接対建築ダメージ倍率",
 							"GameParamName": "GMMeleeConstructDamageRatio",
-							"Tooltips": "Multiplies melee weapon damage that characters deal to Constructs.",
+							"Tooltips": "近接対建築ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1652,9 +1652,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Ranged DMG vs. Constructs rate",
+							"LabelControlName": "射撃対建築ダメージ倍率",
 							"GameParamName": "GMRangedConstructDamageRatio",
-							"Tooltips": "Multiplies ranged weapon damage that characters deal to Constructs.",
+							"Tooltips": "射撃対建築ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1666,9 +1666,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Collection tool DMG multiplier",
+							"LabelControlName": "道具対資源ダメージ倍率",
 							"GameParamName": "GMToolDamageRate",
-							"Tooltips": "Multiplies damage that tools deal to resources.",
+							"Tooltips": "道具が資源に与えるダメージを倍増させる",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1680,9 +1680,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Durability loss multiplier",
+							"LabelControlName": "耐久値減少倍率",
 							"GameParamName": "GMDurabilityCostRatio",
-							"Tooltips": "Multiplies durability lost when using tools, weapons, and armor.",
+							"Tooltips": "道具、武器、防具を使用した際の耐久値消費倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1696,13 +1696,13 @@
 				},
 				{
 					"TabID": "8",
-					"TabName": "Vehicles",
+					"TabName": "車両",
 					"ControlList": [
 						{
 							"ControlType": 7,
-							"LabelControlName": "Vehicle vs. player DMG rate",
+							"LabelControlName": "車両対プレイヤーダメージ倍率",
 							"GameParamName": "GMVehiclePlayerDamageRatio",
-							"Tooltips": "Multiplies the amount of damage vehicles deal to players.",
+							"Tooltips": "車両対プレイヤーダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1714,9 +1714,9 @@
 						},
 						{
 							"ControlType": 7,
-							"LabelControlName": "Vehicle vs. Construct DMG rate",
+							"LabelControlName": "車両対建築ダメージ倍率",
 							"GameParamName": "GMVehicleConstructDamageRatio",
-							"Tooltips": "Multiplies the amount of damage vehicles deal to Constructs.",
+							"Tooltips": "車両対建築ダメージ倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
@@ -1728,9 +1728,9 @@
 						},
 						{
 							"ControlType": 6,
-							"LabelControlName": "Vehicle collection rate",
+							"LabelControlName": "車両収集倍率",
 							"GameParamName": "GMVehicleDamageRate",
-							"Tooltips": "Multiplies the amount of resources collected by vehicles.",
+							"Tooltips": "車両で資源を収集する場合の倍率",
 							"Range": {
 								"DefaultValue": 1,
 								"MinValue": 0,
