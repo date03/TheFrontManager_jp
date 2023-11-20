@@ -1,4 +1,4 @@
-# TheFrontManager 日本語化(v1.0.12)
+# TheFrontManager 日本語化(v1.0.13)
 現在，翻訳作業中です
 ## 注意
 - 翻訳作業が追い付いていない場合，TheFrontManagerでエラーが発生する恐れがあります
