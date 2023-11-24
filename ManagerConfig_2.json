@@ -161,6 +161,34 @@
 							},
 							"bRequired": true,
 							"TabID": "1"
+						},
+						{
+							"ControlType": 6,
+							"LabelControlName": "バックアップ回数",
+							"GameParamName": "BackupTimesPerDay",
+							"Tooltips": "一日に何回バックアップを行うか",
+							"Range": {
+								"DefaultValue": 6,
+								"MinValue": 1,
+								"MaxValue": 24,
+								"StepValue": 1
+							},
+							"bRequired": false,
+							"TabID": "1"
+						},
+						{
+							"ControlType": 6,
+							"LabelControlName": "最大バックアップ数",
+							"GameParamName": "BackupRetainedDays",
+							"Tooltips": "最大バックアップ数を超えたバックアップは上書きされます",
+							"Range": {
+								"DefaultValue": 7,
+								"MinValue": 1,
+								"MaxValue": 30,
+								"StepValue": 1
+							},
+							"bRequired": false,
+							"TabID": "1"
 						}
 					]
 				},
@@ -525,6 +553,20 @@
 							},
 							"bRequired": false,
 							"bNeedValue": true,
+							"TabID": "2"
+						},
+						{
+							"ControlType": 6,
+							"LabelControlName": "チームの最大数",
+							"GameParamName": "GuildMemberMax",
+							"Tooltips": "",
+							"Range": {
+								"DefaultValue": 6,
+								"MinValue": 6,
+								"MaxValue": 20,
+								"StepValue": 1
+							},
+							"bRequired": false,
 							"TabID": "2"
 						}
 					]

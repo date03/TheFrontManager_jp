@@ -161,6 +161,34 @@
 							},
 							"bRequired": true,
 							"TabID": "1"
+						},
+						{
+							"ControlType": 6,
+							"LabelControlName": "Daily Backup Times",
+							"GameParamName": "BackupTimesPerDay",
+							"Tooltips": "",
+							"Range": {
+								"DefaultValue": 6,
+								"MinValue": 1,
+								"MaxValue": 24,
+								"StepValue": 1
+							},
+							"bRequired": false,
+							"TabID": "1"
+						},
+						{
+							"ControlType": 6,
+							"LabelControlName": "Backup Retention Period",
+							"GameParamName": "BackupRetainedDays",
+							"Tooltips": "Backups whose retention period is exceeded will be overwritten by new backups",
+							"Range": {
+								"DefaultValue": 7,
+								"MinValue": 1,
+								"MaxValue": 30,
+								"StepValue": 1
+							},
+							"bRequired": false,
+							"TabID": "1"
 						}
 					]
 				},
@@ -525,6 +553,20 @@
 							},
 							"bRequired": false,
 							"bNeedValue": true,
+							"TabID": "2"
+						},
+						{
+							"ControlType": 6,
+							"LabelControlName": "Squad Member Limit",
+							"GameParamName": "GuildMemberMax",
+							"Tooltips": "",
+							"Range": {
+								"DefaultValue": 6,
+								"MinValue": 6,
+								"MaxValue": 20,
+								"StepValue": 1
+							},
+							"bRequired": false,
 							"TabID": "2"
 						}
 					]
